@@ -1,0 +1,72 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+}
+
+section {
+    width: 15em;
+    height: 20em;
+    text-align: center;
+    margin: 5em auto 0 auto;
+}
+
+.portret {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    position: relative;
+    width:  100%;
+    height: 100%;
+}
+
+footer {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 10em;
+    width: 100%;
+}
+
+@media only screen and (min-width: 100px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    #bottom2 {
+         margin-bottom: 6em;
+     }
+}
+
+@media only screen and (min-width: 500px) {
+    main {
+        grid-template-columns: auto auto;
+    }
+
+    #bottom1 {
+        margin-bottom: 6em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    #bottom1 #bottom2 {
+        margin-bottom: 0;
+    }
+}
